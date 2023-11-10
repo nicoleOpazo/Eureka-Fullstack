@@ -32,7 +32,6 @@ public class Area {
     @Column(nullable = false)
     private String nombre;
 
-    // Constructor para deserialización desde String (id)
     public Area(String id) {
         this.id = Long.parseLong(id);
     }

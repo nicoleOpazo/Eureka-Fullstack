@@ -42,7 +42,7 @@ export class ResultadosGraficoComponent implements OnInit {
                     y: {
                         beginAtZero: true,
                         suggestedMin: 0,
-                        suggestedMax: Math.ceil(Math.max(...this.areasConCantidadPersonas.map(area => area.cantidadPersonas)) / 10) * 10 
+                        suggestedMax: Math.ceil(Math.max(...this.areasConCantidadPersonas.map(area => area.cantidadPersonas)) / 10) * 10
                     }
                 }
             }

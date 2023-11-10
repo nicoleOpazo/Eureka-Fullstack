@@ -58,14 +58,4 @@ public class ControladorArea {
         return new ResponseEntity<>(areasConCantidadPersonas, HttpStatus.OK);
     }
 
-    /*@GetMapping("/{id}/numeroPersonas")
-    public ResponseEntity<Long> obtenerNumeroDePersonasPorArea(@PathVariable("id") Long id) {
-        // Obtener el área por ID
-        Area area = servicioArea.obtenerArea(id);
-        // Obtener el número de personas asociadas a ese área
-        Long numeroDePersonas = (long) area.getPersonas().size();
-
-        return new ResponseEntity<>(numeroDePersonas, HttpStatus.OK);
-    }*/
-
 }

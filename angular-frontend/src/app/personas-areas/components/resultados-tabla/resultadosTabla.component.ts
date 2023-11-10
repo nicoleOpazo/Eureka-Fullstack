@@ -27,7 +27,7 @@ export class ResultadosTablaComponent implements OnInit {
         this.getAreasConCantidadPersonas();
     }
 
-    
+
 
     navigateToResultadosTabla() {
         this.router.navigate(['/rtabla']);

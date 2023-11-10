@@ -1,60 +1,27 @@
 <div class="card bg-dark text-white">
-    <div class="card-header">{{ title }}</div>
-    <div class="card-body">
-        <form (ngSubmit)="agregarPersona(f)" #f="ngForm">
+  <div class="card-header">{{ title }}</div>
+  <div class="card-body">
+    <form (ngSubmit)="agregarPersona(f)" #f="ngForm">
 
-            <div>
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
-            </div>
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
+      </div>
 
-            <div>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" [(ngModel)]="persona.email" required>
-            </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="persona.email" required>
+      </div>
 
-            <div>
-              <label for="area">Área:</label>
-              <select id="area" name="area" [(ngModel)]="persona.area" required>
-                <option *ngFor="let area of areas" [value]="area.id">{{ area.nombre }}</option>
-              </select>
-            </div>
-            
-            <button type="submit">Registrar</button>
-          </form>
-        
-    </div>
+      <div>
+        <label for="area">Área:</label>
+        <select id="area" name="area" [(ngModel)]="persona.area" required>
+          <option *ngFor="let area of areas" [value]="area.id">{{ area.nombre }}</option>
+        </select>
+      </div>
+
+      <button type="submit">Registrar</button>
+    </form>
+
+  </div>
 </div>
-
-<!-- <form #personaForm="ngForm">
-
-            <div class="form-group row" style="margin-bottom: 50px;">
-                <label for="nombre" class="col-form-label col-sm-2">Nombre:</label>
-                <div class="col-sm-6">
-                </div>
-            </div>
-
-            <div class="form-group row" style="margin-bottom: 50px;">
-                <label for="email" class="col-form-label col-sm-2">Correo electrónico:</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" name="email" #email="">
-                </div>
-            </div>
-
-            <div class="form-group row" style="margin-bottom: 30px;">
-                <label for="areas" class="col-form-label col-sm-2">Área:</label>
-                <select name="areas" id="areas" class="col-sm-6 form-select"
-                    formControlName="identificador">
-                    <option>
-                    </option>
-                </select>
-            </div>
-
-
-            <div class="form-group row">
-                <div class="col-sm-6">
-                    <button class="btn btn-primary" role="button" [disabled]="!personaForm.form.valid">Guardar</button>
-                </div>
-            </div>
-
-        </form> -->
