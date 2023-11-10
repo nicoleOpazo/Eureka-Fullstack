@@ -72,3 +72,6 @@ git clone https://github.com/nicoleOpazo/Eureka-Fullstack
 - URL: http://localhost:8080/areas/listadoAreas
 - Método: GET
 
+## Ejecución de Pruebas
+- Para ejecutar las pruebas unitarias de backend con Junit y Mockito, puedes utilizar el comando `mvn test` en la raíz del proyecto. Asegúrate de tener Maven instalado y configurado en tu entorno.
+- Para ejecutar las pruebas unitarias de frontend con Karma, puedes utilizar el comando `ng test` en la raíz del proyecto.
