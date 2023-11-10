@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+#personas {
+    color: black;
+    margin: 3%;
+    font-family: 'Comfortaa', sans-serif;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.256);
+    padding: 3%;
+    background: white;
+    border-radius: 30px;
+}
+
+#personas .encabezado {
+    background-color: rgb(51,137,158);
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+
+#personas h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+#personas td {
+    background-color: rgb(225, 225, 225);
+    border: none;
+}

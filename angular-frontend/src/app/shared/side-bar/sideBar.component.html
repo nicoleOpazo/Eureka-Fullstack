@@ -1,0 +1,37 @@
+<div>
+    <header>
+        <button (click)="drawer.toggle()" mat-icon-button>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>{{title}}</span>
+    </header>
+
+    <mat-drawer-container autosize>
+        <mat-drawer #drawer opened="true" mode="side" position="start">
+            <mat-nav-list>
+
+                <mat-list-item>
+                    <button routerLink="/registro" mat-button>Registro</button>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <button routerLink="/rtabla" mat-button>Tabla de Resultados</button>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <button routerLink="/rgrafico" mat-button>Grafico de Resultados</button>
+                </mat-list-item>
+                
+                <mat-list-item>
+                    <button routerLink="/acerca" mat-button>Acerca De</button>
+                </mat-list-item>
+            </mat-nav-list>
+        </mat-drawer>
+
+        <mat-drawer-content>
+            <div style="text-align: center;min-height: 600px;">
+                <router-outlet></router-outlet>
+            </div>
+        </mat-drawer-content>
+    </mat-drawer-container>
+</div>
